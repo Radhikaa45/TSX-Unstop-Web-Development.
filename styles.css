@@ -1,0 +1,132 @@
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.page-header {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #40916c;
+    transform: translateY(-2px);
+}
+
+
+.page-content {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 1200px;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.main-article {
+    flex: 3;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-article h2 {
+    color: #2d6a4f;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #d8f3dc;
+    padding-bottom: 0.5rem;
+}
+
+.main-article h3 {
+    color: #40916c;
+    margin: 1.5rem 0 1rem;
+}
+
+.main-article p {
+    margin-bottom: 1rem;
+    color: #495057;
+}
+
+
+.sidebar {
+    flex: 1;
+    padding: 2rem;
+    background-color: #d8f3dc;
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+.sidebar h3 {
+    color: #1b4332;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar a {
+    color: #2d6a4f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #1b4332;
+    text-decoration: underline;
+}
+
+
+.page-footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.page-footer a {
+    color: #d8f3dc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
