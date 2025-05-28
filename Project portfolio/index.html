@@ -1,26 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radhika Gupta | Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style1.css" />
 </head>
 <body>
-    <h1>HELLO,WORLD!</h1>
-    <p>This the assignment1 topic:1</p>
-    <button id="myButton">Click Me</button>
-    
-  
-    <script>
-     
-        console.log("Hello, World! The page has loaded.");
-        
-       
-        document.getElementById('myButton').addEventListener('click', function() {
-            console.log("Button was clicked!");
-        });
-    </script>
+
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Radhika Gupta</div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="contact-icons">
+        <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/Radhikaa45" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/radhika-gupta-2671b1326" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:radhikagupta45ig@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hey, I'm Radhika Gupta</h1>
+        <h2>I'm a Programmer | Tech Enthusiast</h2>
+        <a href="Radhika_resumee.pdf" download>
+          <button style="margin-top: 10px; padding: 10px 20px; font-size: 16px; border-radius: 8px; background-color: #0077cc; color: white; border: none; cursor: pointer;">
+            Download Resume
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm currently pursuing my B.Tech in Computer Science & Engineering at Central University of Jammu. <br>
+          Passionate about continuous learning and practical tech projects.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <p class="university">Central University of Jammu</p>
+        <p class="year">2022 - 2026</p>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <h2 class="section-title">My Experiences</h2>
+      <div class="experiences">
+        <div class="experience-card">
+          <i class="fas fa-robot experience-icon"></i>
+          <h3>AI Assistant for Farmers (DRDO CUJ)</h3>
+          <p>Built an AI assistant for farmers using LLMs that accepts text/image queries and maintains context.</p>
+        </div>
+        <div class="experience-card">
+          <i class="fas fa-comments experience-icon"></i>
+          <h3>Chatbot for Post Office</h3>
+          <p>Created a 24/7 chatbot using Flask & Dialogflow to handle frequent customer queries.</p>
+        </div>
+        <div class="experience-card">
+          <i class="fas fa-laptop-code experience-icon"></i>
+          <h3>Django Workshop</h3>
+          <p>Hands-on experience with Django's MVT architecture, views, templates, and models.</p>
+        </div>
+        <div class="experience-card">
+          <i class="fas fa-brain experience-icon"></i>
+          <h3>AI & ML Workshop</h3>
+          <p>Learned and built ML models using Python and scikit-learn over a 3-day program.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item"><i class="fab fa-cuttlefish"></i> C/C++</div>
+            <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+            <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS/JS</div>
+            <div class="skill-item"><i class="fas fa-flask"></i> Flask</div>
+            <div class="skill-item"><i class="fas fa-database"></i> MongoDB/MySQL</div>
+            <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3><i class="fas fa-book"></i> Core Subjects</h3>
+          <div class="skills-list">
+            <div class="skill-item"><i class="fas fa-database"></i> DBMS</div>
+            <div class="skill-item"><i class="fas fa-network-wired"></i> Computer Networks</div>
+            <div class="skill-item"><i class="fas fa-lock"></i> Cybersecurity</div>
+            <div class="skill-item"><i class="fas fa-cogs"></i> Operating Systems</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js" defer>
+  </script>
 </body>
 </html>
